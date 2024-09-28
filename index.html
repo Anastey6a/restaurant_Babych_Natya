@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<!-- Визначає тип документа як HTML5 -->
+
+<html lang="en">
+<!-- Відкриває тег html з атрибутом мови англійською -->
+
+<head>
+  <!-- Відкриває розділ head, який містить метадані та посилання на ресурси -->
+
+  <meta charset="UTF-8">
+  <!-- Встановлює кодування символів документа на UTF-8 -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Забезпечує сумісність з останніми версіями Internet Explorer -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Налаштовує область перегляду для адаптивного дизайну -->
+
+  <link rel="shortcut icon" type="text/css" href="logo2.png">
+  <!-- Додає іконку сайту (favicon) -->
+
+  <title>Foodpoint</title>
+  <!-- Встановлює заголовок сторінки -->
+
+  <link rel="stylesheet" href="./css/foodhub.css">
+  <!-- Підключає основний файл стилів CSS -->
+
+  <link rel="stylesheet" href="./css/media_query.css">
+  <!-- Підключає файл стилів для медіа-запитів (адаптивний дизайн) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Попередньо підключає домен Google Fonts для оптимізації завантаження шрифтів -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Попередньо підключає домен шрифтів з атрибутом crossorigin -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Підключає шрифти Monoton та Rubik з Google Fonts -->
+
+</head>
+<!-- Закриває розділ head -->
+
+<body>
+<!-- Відкриває тіло документа -->
+
+  <!--
+    - main container
+  -->
+  <!-- Головний контейнер для всього вмісту сторінки -->
+
+  <div class="container">
+    <!-- Відкриває див з класом container -->
+
+    <!--
+      - #HEADER
+    -->
+    <!-- Розділ заголовка сторінки -->
+
+    <header>
+      <!-- Відкриває тег header -->
+
+      <nav class="navbar">
+        <!-- Відкриває навігаційну панель з класом navbar -->
+
+        <div class="navbar-wrapper">
+          <!-- Відкриває див для обгортки навбару -->
+
+          <a href="#">
+            <!-- Посилання на головну сторінку -->
+            <img src="./images/logo2.png" alt="logo" width="50">
+            <!-- Логотип сайту з шириною 50px -->
+          </a>
+
+          <ul class="navbar-nav">
+            <!-- Список навігаційних посилань -->
+
+            <li>
+              <!-- Пункт списку -->
+              <a href="#home" class="nav-link">Дім</a>
+              <!-- Посилання на секцію "Дім" -->
+            </li>
+
+            <li>
+              <a href="#about" class="nav-link">Про нас</a>
+              <!-- Посилання на секцію "Про нас" -->
+            </li>
+
+            <li>
+              <a href="#services" class="nav-link">Сервіс</a>
+              <!-- Посилання на секцію "Сервіс" -->
+            </li>
+
+            <li>
+              <a href="#menu" class="nav-link">Меню</a>
+              <!-- Посилання на секцію "Меню" -->
+            </li>
+
+            <li>
+              <a href="#testimonials" class="nav-link">Відгуки</a>
+              <!-- Посилання на секцію "Відгуки" -->
+            </li>
+
+          </ul>
+          <!-- Закриває список навігаційних посилань -->
+
+          <div class="navbar-btn-group">
+            <!-- Група кнопок у навбарі -->
+
+            <button class="shopping-cart-btn">
+              <!-- Кнопка кошика покупок -->
+              <img src="./images/cart.svg" alt="shopping cart icon" width="18">
+              <!-- Іконка кошика з шириною 18px -->
+              <span class="count">4</span>
+              <!-- Лічильник кількості товарів у кошику -->
+            </button>
+
+            <button class="menu-toggle-btn">
+              <!-- Кнопка для перемикання меню (гамбургер) -->
+              <span class="line one"></span>
+              <!-- Перша лінія гамбургера -->
+              <span class="line two"></span>
+              <!-- Друга лінія гамбургера -->
+              <span class="line three"></span>
+              <!-- Третя лінія гамбургера -->
+            </button>
+
+          </div>
+          <!-- Закриває групу кнопок у навбарі -->
+
+        </div>
+        <!-- Закриває обгортку навбару -->
+
+      </nav>
+      <!-- Закриває навігаційну панель -->
+
+      <div class="cart-box">
+        <!-- Відкриває див для відображення кошика покупок -->
+
+        <ul class="cart-box-ul">
+          <!-- Список товарів у кошику -->
+
+          <h4 class="cart-h4">Твоє замовлення</h4>
+          <!-- Заголовок секції кошика -->
+
+          <li>
+            <!-- Пункт списку товару -->
+            <a href="#" class="cart-item">
+              <!-- Посилання на товар у кошику -->
+              <div class="img-box">
+                <!-- Обгортка для зображення товару -->
+                <img src="./images/1.jpg" alt="product image" class="product-img" width="50" height="50" loading="lazy">
+                <!-- Зображення товару з розмірами 50x50px, ліниве завантаження -->
+              </div>
+
+              <h5 class="product-name">Бізнес ланч</h5>
+              <!-- Назва товару -->
+
+              <p class="product-price">
+                <!-- Ціна товару -->
+                <span class="small">₴</span>267
+                <!-- Символ валюти та сума -->
+              </p>
+            </a>
+          </li>
+          <!-- Закриває пункт списку товару -->
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./images/13.jpg" alt="product image" class="product-img" width="50" height="50" loading="lazy">
+              </div>
+
+              <h5 class="product-name">Презент</h5>
+              <p class="product-price">
+                <span class="small">₴</span>0
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./images/3.jpg" alt="product image" class="product-img" width="50" height="50" loading="lazy">
+              </div>
+
+              <h5 class="product-name">Cалат цезар + Passion sour </h5>
+              <p class="product-price">
+                <span class="small">₴</span>450
+              </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="cart-item">
+              <div class="img-box">
+                <img src="./images/25.jpg" alt="product image" class="product-img" width="50" height="50" loading="lazy">
+              </div>
+
+              <h5 class="product-name">Десерт сезонний</h5>
+              <p class="product-price">
+                <span class="small">₴</span>110
+              </p>
+            </a>
+          </li>
+
+        </ul>
+        <!-- Закриває список товарів у кошику -->
+
+        <div class="cart-btn-group">
+          <!-- Група кнопок у кошику -->
+
+          <button class="btn btn-primary">
+            <!-- Кнопка з основним стилем -->
+            <a href=" https://expz.monobank.ua/">Порахувати</a>
+            <!-- Посилання на зовнішній ресурс для розрахунку -->
+          </button>
+        </div>
+        <!-- Закриває групу кнопок у кошику -->
+
+      </div>
+      <!-- Закриває див для кошика покупок -->
+
+    </header>
+    <!-- Закриває тег header -->
+
+    <main>
+      <!-- Відкриває головний вміст сторінки -->
+
+      <!--
+        - #HOME SECTION
+      -->
+      <!-- Секція "Домашня сторінка" -->
+
+      <section class="home" id="home">
+        <!-- Відкриває секцію з класом home та ідентифікатором home -->
+
+        <div class="home-left">
+          <!-- Ліва частина секції home -->
+
+          <p class="home-subtext">Привіт, друже</p>
+          <!-- Підзаголовок привітання -->
+
+          <h1 class="main-heading">Ми не готуємо, ми робимо настрій!</h1>
+          <!-- Головний заголовок -->
+
+          <p class="home-text">
+            FoodPoint-місце твоїх зустрічей
+          </p>
+          <!-- Текстовий опис -->
+
+          <div class="btn-group">
+            <!-- Група кнопок -->
+
+            <button class="btn btn-primary btn-icon">
+              <!-- Кнопка з основним стилем та іконкою -->
+              <img src="./images/menu.svg" alt="menu icon">
+              <!-- Іконка меню -->
+               Меню
+              <!-- Текст кнопки -->
+            </button>
+
+            <button class="btn btn-secondary btn-icon">
+              <!-- Кнопка з вторинним стилем та іконкою -->
+              <img src="./images/arrow.svg" alt="menu icon">
+              <!-- Іконка стрілки -->
+              Про нас
+              <!-- Текст кнопки -->
+            </button>
+
+          </div>
+          <!-- Закриває групу кнопок -->
+
+        </div>
+        <!-- Закриває ліву частину секції home -->
+
+        <div class="home-right">
+          <!-- Права частина секції home -->
+
+          <img src="./images/19.jpg" alt="food image" class="food-img food-1" width="200" loading="lazy">
+          <!-- Зображення страви з класами food-img та food-1, ширина 200px, ліниве завантаження -->
+          <img src="./images/11.jpg" alt="food image" class="food-img food-2" width="200" loading="lazy">
+          <!-- Зображення страви з класами food-img та food-2, ширина 200px, ліниве завантаження -->
+          <img src="./images/12.jpg" alt="food image" class="food-img food-3" width="200" loading="lazy">
+          <!-- Зображення страви з класами food-img та food-3, ширина 200px, ліниве завантаження -->
+
+        </div>
+        <!-- Закриває праву частину секції home -->
+
+      </section>
+      <!-- Закриває секцію home -->
+
+      <!--
+        - #ABOUT SECTION
+      -->
+      <!-- Секція "Про нас" -->
+
+      <section class="about" id="about">
+        <!-- Відкриває секцію з класом about та ідентифікатором about -->
+
+        <div class="about-left">
+          <!-- Ліва частина секції about -->
+
+          <div class="img-box">
+            <!-- Обгортка для зображення -->
+            <img src="./images/3.jpg" alt="about image" class="about-img" width="250">
+            <!-- Зображення про компанію з шириною 250px -->
+          </div>
+
+          <div class="abs-content-box">
+            <!-- Обгортка для абсолютного контенту -->
+
+            <div class="dotted-border">
+              <!-- Див з пунктирною рамкою -->
+              <p class="number-lg">2</p>
+              <!-- Велике число -->
+              <p class="text-md">Years <br> Досвіду</p>
+              <!-- Текст з роками досвіду -->
+            </div>
+            <!-- Закриває див з рамкою -->
+
+          </div>
+          <!-- Закриває обгортку для контенту -->
+
+        </div>
+        <!-- Закриває ліву частину секції about -->
+
+        <div class="about-right">
+          <!-- Права частина секції about -->
+
+          <h2 class="section-title">Ми робимо більше, ніж ви очікуєте</h2>
+          <!-- Заголовок секції -->
+
+          <p class="section-text">
+             FoodPoint — це сучасний ресторан, який пропонує широкий вибір страв різних кухонь світу. Головний акцент закладу — якісні інгредієнти, швидке обслуговування та приємна атмосфера. FoodPoint підходить як для швидких обідів, так і для затишних вечерь з друзями та родиною.
+          </p>
+          <!-- Перший абзац тексту про ресторан -->
+
+          <p class="section-text">
+              Ми поєднуємо традиційні рецепти з сучасними кулінарними техніками, щоб створювати унікальні страви, які задовольнять найвибагливіші смаки. Від класичних європейських страв до екзотичних азійських смаколиків — у нашому меню є все, що може здивувати і порадувати наших гостей.
+          </p>
+          <!-- Другий абзац тексту про ресторан -->
+
+          <img src="./images/16.jpg" alt="signature" class="signature" width="250">
+          <!-- Зображення підпису з шириною 250px -->
+
+        </div>
+        <!-- Закриває праву частину секції about -->
+
+      </section>
+      <!-- Закриває секцію about -->
+
+      <!--
+        - #SERVICES SECTION
+      -->
+      <!-- Секція "Сервіси" -->
+
+      <section class="services" id="services">
+        <!-- Відкриває секцію з класом services та ідентифікатором services -->
+
+        <div class="service-card">
+          <!-- Карточка сервісу -->
+
+          <p class="card-number">01</p>
+          <!-- Номер сервісу -->
+
+          <h3 class="card-heading">Знаходимось ми по всім містам України</h3>
+          <!-- Заголовок сервісу -->
+
+          <p class="card-text">
+            Київ, Львів, Одеса, Харків, Івано-Франківськ
+          </p>
+          <!-- Текстовий опис сервісу -->
+        </div>
+        <!-- Закриває карточку сервісу -->
+
+        <div class="service-card">
+          <p class="card-number">02</p>
+          <h3 class="card-heading">Авторська кухня</h3>
+          <p class="card-text">
+            Наш шеф-кухар ретельно відбирає найкращі рецепти з усього світу, додаючи до них свою інтерпретацію та авторські штрихи.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-number">03</p>
+          <h3 class="card-heading">Онлайн-замовлення та доставка</h3>
+          <p class="card-text">
+            Ми піклуємося про ваш комфорт, тому пропонуємо зручну систему онлайн-замовлення. Ви можете обрати улюблені страви та отримати їх прямо до дверей вашого дому або офісу. 
+          </p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-number">04</p>
+          <h3 class="card-heading">Високий рівень обслуговування</h3>
+          <p class="card-text">
+             Наша команда обслуговуючого персоналу — це професіонали своєї справи, які завжди готові надати вам найкращий сервіс, де кожен гість почуватиметься особливим.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <p class="card-number">05</p>
+          <h3 class="card-heading">Затишний інтер'єр</h3>
+          <p class="card-text">
+            Кожний заклад відрізняється своєю концепцією.Різні зони розташування столів дозволяють вибрати ідеальне місце як для ділової зустрічі, так і для романтичної вечері.
+          </p>
+        </div>
+
+      </section>
+      <!-- Закриває секцію services -->
+
+      <!--
+        - #PRODUCT SECTION
+      -->
+      <!-- Секція "Продукти" -->
+
+      <section class="product" id="menu">
+        <!-- Відкриває секцію з класом product та ідентифікатором menu -->
+
+        <h2 class="section-title">Цікаве</h2>
+        <!-- Заголовок секції -->
+
+        <p class="section-text">
+          Широкий спектр новинок
+        </p>
+        <!-- Опис секції -->
+
+        <div class="products-grid">
+          <!-- Сітка продуктів -->
+
+          <a href="#">
+            <!-- Посилання на продукт -->
+
+            <div class="product-card">
+              <!-- Карточка продукту -->
+
+              <div class="img-box">
+                <!-- Обгортка для зображення продукту -->
+                <img src="./images/22.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+                <!-- Зображення продукту з шириною 200px, ліниве завантаження -->
+              </div>
+
+              <div class="product-content">
+                <!-- Контент продукту -->
+
+                <div class="wrapper">
+                  <!-- Обгортка для заголовка та ціни -->
+                  <h3 class="product-name">Велика кавова карта </h3>
+                  <!-- Назва продукту -->
+
+                  <p class="product-price">
+                    <!-- Ціна продукту -->
+                    <span class="small">₴</span>110
+                  </p>
+                </div>
+                <!-- Закриває обгортку -->
+
+                <p class="product-text">
+                  Наші бариста — справжні майстри своєї справи, які знають, як перетворити кожну чашку кави на витвір мистецтва.
+                </p>
+                <!-- Опис продукту -->
+
+                <div class="product-rating">
+                  <!-- Рейтинг продукту -->
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <!-- Закриває рейтинг продукту -->
+
+              </div>
+              <!-- Закриває контент продукту -->
+
+            </div>
+            <!-- Закриває карточку продукту -->
+
+          </a>
+          <!-- Закриває посилання на продукт -->
+
+          <a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./images/23.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Коктейлі</h3>
+                  <p class="product-price">
+                    <span class="small">₴</span>від 120
+                  </p>
+                </div>
+
+                <p class="product-text">
+                    Ми поєднуємо класичні рецепти з оригінальними інгредієнтами та авторськими техніками, створюючи напої, які дарують незабутні враження.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./images/13.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge green">
+                  <!-- Бейдж акції -->
+                  <ion-icon name="leaf"></ion-icon>
+                  <!-- Іконка листка -->
+                  <p>Акція</p>
+                  <!-- Текст бейджа -->
+                </div>
+                <!-- Закриває бейдж -->
+              </div>
+
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Презенти в закладі</h3>
+                  <p class="product-price">
+                    <span class="small">₴</span>0
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Обов'язково кожного клієнта пригощаємо нашою фірменою закускою та поживною водичкою з лимоном
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./images/10.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge red">
+                  <!-- Бейдж новинки -->
+                  <ion-icon name="flame"></ion-icon>
+                  <!-- Іконка полум'я -->
+                  <p>Hoвинка</p>
+                  <!-- Текст бейджа -->
+                </div>
+                <!-- Закриває бейдж -->
+              </div>
+
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Куточок для фанатів книг</h3>
+                  <p class="product-price">
+                    <span class="small">₴</span>від 80
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Для любителів усамітниця з книгою та кавою, є прекрасна нагода завітати до нашого книжкого закладу
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./images/18.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+
+                <div class="card-badge green">
+                  <ion-icon name="leaf"></ion-icon>
+                  <p>Акція</p>
+                </div>
+              </div>
+
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Бізнес ланчі</h3>
+                  <p class="product-price">
+                    <span class="small">₴</span>300
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Паста (на вибір) медальйон + гарнір (на вибір) і лимонад.
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="product-card">
+              <div class="img-box">
+                <img src="./images/2.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+              </div>
+
+              <div class="product-content">
+                <div class="wrapper">
+                  <h3 class="product-name">Багато фотозон</h3>
+                  <p class="product-price">
+                    <span class="small">₴</span>0
+                  </p>
+                </div>
+
+                <p class="product-text">
+                  Наш заклад має багато локацій для ваших прекрасних фото для соціальних мереж. 
+                </p>
+
+                <div class="product-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+
+            </div>
+          </a>
+
+        </div>
+        <!-- Закриває сітку продуктів -->
+
+        <button class="btn btn-primary btn-icon" onclick="window.location.href='./menu.html';">
+          <!-- Кнопка з основним стилем та іконкою, яка перенаправляє на сторінку меню -->
+          <img src="./images/menu.svg" alt="menu icon">
+          <!-- Іконка меню -->
+           Full menu
+          <!-- Текст кнопки -->
+        </button>
+
+      </section>
+      <!-- Закриває секцію product -->
+
+      <!--
+        - #TESTIMONIALS SECTION
+      -->
+      <!-- Секція "Відгуки" -->
+
+      <section class="testimonials" id="testimonials">
+        <!-- Відкриває секцію з класом testimonials та ідентифікатором testimonials -->
+
+        <h2 class="section-title">Відгуки</h2>
+        <!-- Заголовок секції -->
+
+        <p class="section-text">
+          Ми активно працюємо над вдосконаленням нашої платформи
+        </p>
+        <!-- Опис секції -->
+
+        <div class="testimonials-grid">
+          <!-- Сітка відгуків -->
+
+          <div class="testimonials-card">
+            <!-- Карточка відгуку -->
+
+            <h4 class="card-title">10 3 10!!!</h4>
+            <!-- Заголовок відгуку -->
+
+            <div class="testimonials-rating">
+              <!-- Рейтинг відгуку -->
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <!-- Закриває рейтинг відгуку -->
+
+            <p class="testimonials-text">
+              Нещодавно відвідали ресторан Смачно і були в захваті! Атмосфера тут дуже затишна, а обслуговування — на високому рівні. Офіціанти були уважні та доброзичливі, завжди готові допомогти з вибором страв.Ціни адекватні, враховуючи якість їжі та обслуговування. Без сумніву, ми повернемося сюди ще раз і рекомендуємо всім, хто шукає смачну їжу в приємній обстановці
+            </p>
+            <!-- Текст відгуку -->
+
+            <div class="customer-info">
+              <!-- Інформація про клієнта -->
+
+              <div class="customer-img-box">
+                <!-- Обгортка для зображення клієнта -->
+                <img src="./images/18.jpg" alt="customer image" class="customer-img" width="100" loading="lazy">
+                <!-- Зображення клієнта з шириною 100px, ліниве завантаження -->
+              </div>
+
+              <h5 class="customer-name">Валерія Деркач</h5>
+              <!-- Ім'я клієнта -->
+            </div>
+            <!-- Закриває інформацію про клієнта -->
+
+          </div>
+          <!-- Закриває карточку відгуку -->
+
+          <div class="testimonials-card">
+          
+            <h4 class="card-title">Я обідаю тут щодня</h4>
+            <!-- Заголовок відгуку -->
+          
+            <div class="testimonials-rating">
+              <!-- Рейтинг відгуку -->
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <!-- Закриває рейтинг відгуку -->
+          
+            <p class="testimonials-text">
+              Ресторан має чудове меню з різноманітними стравами, і кожна з них готується з любов'ю та увагою до деталей.
+
+              Салати завжди свіжі та смачні, а основні страви — справжня насолода. 
+
+              Персонал дуже привітний і завжди готовий допомогти з вибором. Атмосфера в ресторані затишна і розслаблююча, що робить обід приємним ритуалом.
+            </p>
+            <!-- Текст відгуку -->
+          
+            <div class="customer-info">
+              <!-- Інформація про клієнта -->
+
+              <div class="customer-img-box">
+                <!-- Обгортка для зображення клієнта -->
+                <img src="./images/8.jpg" alt="customer image" class="customer-img" width="100" loading="lazy">
+                <!-- Зображення клієнта з шириною 100px, ліниве завантаження -->
+              </div>
+          
+              <h5 class="customer-name">Сергій Коваль</h5>
+              <!-- Ім'я клієнта -->
+            </div>
+            <!-- Закриває інформацію про клієнта -->
+          
+          </div>
+          <!-- Закриває карточку відгуку -->
+
+        </div>
+        <!-- Закриває сітку відгуків -->
+
+      </section>
+      <!-- Закриває секцію testimonials -->
+
+    </main>
+    <!-- Закриває головний вміст сторінки -->
+
+    <!--
+      - #FOOTER
+    -->
+    <!-- Футер сторінки -->
+
+    <footer>
+      <!-- Відкриває тег footer -->
+
+      <div class="footer-wrapper">
+        <!-- Обгортка для футера -->
+
+        <a href="#">
+          <!-- Посилання на головну сторінку -->
+          <img src="./images/logo2.png" alt="logo" class="footer-brand" width="60">
+          <!-- Логотип у футері з шириною 60px -->
+        </a>
+
+        <div class="social-link">
+          <!-- Блок соціальних посилань -->
+
+          <a href="https://www.instagram.com/a.nastasiiyaa/">
+            <!-- Посилання на Instagram -->
+            <ion-icon name="logo-google">
+              <!-- Іконка Google -->
+              <img src="./images/google.svg">
+              <!-- Зображення Google -->
+            </ion-icon>
+          </a>
+
+          <a href="#">
+            <!-- Посилання на Instagram -->
+            <ion-icon name="logo-instagram">
+              <!-- Іконка Instagram -->
+              <img src="./images/instagram.svg">
+              <!-- Зображення Instagram -->
+            </ion-icon>
+          </a>
+
+          <a href="#">
+            <!-- Посилання на Facebook -->
+            <ion-icon name="logo-facebook">
+              <!-- Іконка Facebook -->
+              <img src="./images/facebook.svg">
+              <!-- Зображення Facebook -->
+            </ion-icon>
+          </a>
+
+        </div>
+        <!-- Закриває блок соціальних посилань -->
+
+      </div>
+      <!-- Закриває обгортку футера -->
+
+    </footer>
+    <!-- Закриває тег footer -->
+
+  </div>
+  <!-- Закриває головний контейнер -->
+
+  <!--
+    - custom js link
+  -->
+  <!-- Посилання на кастомний JavaScript файл -->
+  <script src="./js/foodhub.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <!-- Посилання на Ionicons (не підключене, можливо потрібно додати) -->
+  
+</body>
+<!-- Закриває тіло документа -->
+
+</html>
+<!-- Закриває тег html -->

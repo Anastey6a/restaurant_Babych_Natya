@@ -1,0 +1,128 @@
+:root {
+  /**
+   * colors 
+   */
+  --red-orange-crayola: hsl(0, 100%, 66%);
+  --space-cadet: hsl(249, 37%, 19%);
+  --pistachio: hsl(88, 50%, 60%);
+  --cultured: hsl(220, 13%, 95%);
+  --saffron: hsl(45, 91%, 58%);
+  --rhythm: hsl(240, 9%, 51%);
+  --white: hsl(0, 0%, 100%);
+
+  /**
+   * typography 
+   */
+  --fs-1: 46px;
+  --fs-2: 28px;
+  --fs-3: 18px;
+  --fs-4: 15px;
+  --fs-5: 14px;
+
+  /**
+   * spacing 
+   */
+  --px: 30px;
+  --py: 60px;
+
+  /**
+   * others 
+   */
+  --default-transition: 0.75s ease;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--space-cadet); /* Dark gray text color */
+    background-color: var(--cultured); /* Light greenish background color */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--red-orange-crayola); /* Reddish navbar background color */
+}
+
+.nav-link {
+    color: var(--saffron); /* Coral text color for navigation links */
+}
+
+/* Search input styles */
+#search-input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    color: var(-red-orange-crayola); /* Dark gray text color */
+    background-color: var(-pistachio); /* Light green background color */
+    border: 1px solid var(-space-cadet); /* Dark gray border color */
+    border-radius: 4px;
+}
+
+/* Menu item styles */
+.menu-item {
+    margin-bottom: 20px;
+    margin-right: 10px; /* 10px right margin for menu items */
+    background-color: var(--white); /* White background color for menu items */
+    border: 1px solid var(--space-cadet); /* Dark gray border color */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.card-img-top {
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+/* Responsive styles */
+@media (min-width: 576px) {
+    /* Medium view */
+    .navbar-toggler {
+        display: inline-block; /* Display the toggler for smaller screens */
+    }
+
+    .navbar-nav {
+        display: none; /* Initially hide navigation links for medium screens */
+    }
+
+    #search-input {
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .menu-item {
+        max-width: calc(48% - 10px); /* Maximum 2 items in a row with margin */
+    }
+}
+
+@media (min-width: 768px) {
+    /* Desktop view */
+    .navbar-toggler {
+        display: none; /* Hide toggler for larger screens */
+    }
+
+    .navbar-nav {
+        display: flex; /* Display navigation links for larger screens */
+    }
+
+    .menu-item {
+        max-width: calc(32% - 10px); /* Maximum 3 items in a row with margin */
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile view */
+    .navbar-toggler {
+        display: inline-block; /* Display the toggler for smaller screens */
+    }
+
+    .navbar-nav {
+        display: none; /* Initially hide navigation links for mobile screens */
+    }
+
+    .menu-item {
+        width: 100%; /* Maximum 1 item in a row for mobile screens */
+    }
+}
